@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Captain America </title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+</head>
+<script src="./logic.js"></script>
+
+<body onmousemove="getMousePosition()" onmousedown="mouseShoot()" onmouseup="stopMouseShoot()">
+
+  <center>
+    <div id="titleScreen" align="center">
+      <video width="1200px" height="600px" loop muted autoplay id="Video">
+        <source src="https://media.giphy.com/media/WpIthkOHwbQ1evO6a6/giphy.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div id="titleScreen2" align="center">
+      <img src="./images/Title1.png" id="TitleImage"> <br>
+      <button type="button" onclick="startGame()" id="PlayButton" class="classButton"> START </button>
+    </div>
+
+    <div id="mainScreen" align="center">
+      <!-- Container for the canvas -->
+    </div>
+
+
+    <div id="endScreen" align="center">
+      <img src="./images/Death.png" class="gameOver">
+      <br><br><br><br><br>
+      <p> You made it to round: <span id="spanRound"> 0 </span> </p> <br> <br>
+      <h1> REFRESH THE PAGE TO FIGHT AGAIN!</h1>
+    </div>
+  </center>
+
+
+</body>
+</html>
